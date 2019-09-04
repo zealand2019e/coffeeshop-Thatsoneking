@@ -7,7 +7,7 @@ namespace CoffeeShopConsoleApp
     /// <summary>
     /// A class that is used for coffe orders
     /// </summary>
-    public class Coffee
+    public abstract class Coffee
     {
         /// <summary>
         /// returns the price of the coffee
@@ -16,8 +16,11 @@ namespace CoffeeShopConsoleApp
         /// <returns>20 dkr</returns>
         public virtual int price()
         {
+            
             return 20;
         }
-
+        public int discount;
+        public abstract string Strength();
+        public Coffee(int Discount) { discount = Discount; }
     }
 }
