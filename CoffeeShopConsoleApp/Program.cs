@@ -14,7 +14,8 @@ namespace CoffeeShopConsoleApp
                 new Black_Coffe(5),
                 new Latte(2),
                 new Machiatto(10),
-                new FlatWhite(12)
+                new FlatWhite(12),
+                new IrishCoffee(20)
 
             };
             List<Coffee> milkList = new List<Coffee>();
@@ -30,6 +31,10 @@ namespace CoffeeShopConsoleApp
             {
                 Console.WriteLine("the Price of the " +coffee+ " is : "+ (coffee.price() - coffee.discount));
                 Console.WriteLine("the Strength of " + coffee + "is : " + coffee.Strength());
+                if (coffee is Alcohol)
+                {
+                    Console.WriteLine(coffee + "Consist of " + coffee.clAlcohol() + " cl of  alcohol and has "+ coffee.Percentage() + " percent of alcohol.");
+                }
             }
             foreach (var coffee in milkList)
             {

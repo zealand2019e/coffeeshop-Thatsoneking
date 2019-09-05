@@ -21,6 +21,14 @@ namespace CoffeeShopConsoleApp
         }
         public int discount;
         public abstract string Strength();
+        public virtual float Percentage()
+        {
+            return 2;
+        }
+        public virtual int clAlcohol()
+        {
+            return 4;
+        }
         public Coffee(int Discount) { discount = Discount; }
     }
 }
