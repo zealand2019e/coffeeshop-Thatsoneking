@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoffeeShopConsoleApp
 {
-    interface Alcohol
+    interface IAlcohol
     {
         int clAlcohol();
         int AlcPer();

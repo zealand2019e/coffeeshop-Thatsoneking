@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoffeeShopConsoleApp
 {
-    class FlatWhite : Coffee , Milk
+    public class FlatWhite : Coffee , Milk
     {
         public override string Strength()
         {

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoffeeShopConsoleApp
 {
-    class IrishCoffee : Coffee , Alcohol
+    public class IrishCoffee : Coffee , IAlcohol
     {
         public override string Strength()
         {

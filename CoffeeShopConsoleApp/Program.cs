@@ -31,7 +31,7 @@ namespace CoffeeShopConsoleApp
             {
                 Console.WriteLine("the Price of the " +coffee+ " is : "+ (coffee.price() - coffee.discount));
                 Console.WriteLine("the Strength of " + coffee + "is : " + coffee.Strength());
-                if (coffee is Alcohol)
+                if (coffee is IAlcohol)
                 {
                     Console.WriteLine(coffee + "Consist of " + coffee.clAlcohol() + " cl of  alcohol and has "+ coffee.Percentage() + " percent of alcohol.");
                 }

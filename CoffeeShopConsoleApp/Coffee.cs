@@ -29,6 +29,7 @@ namespace CoffeeShopConsoleApp
         {
             return 4;
         }
-        public Coffee(int Discount) { discount = Discount; }
+        public Coffee(int Discount) {
+            discount = Discount; }
     }
 }
